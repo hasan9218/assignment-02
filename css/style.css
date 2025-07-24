@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F5F8FF;
+}
+
+/* common css */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #7b7c80;
+
+}
+
+
+/* header css is here */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.menu-area {
+    display: flex;
+}
+.menu-area ul {
+    display: flex;
+    list-style: none;
+}
+.menu-area ul li {
+    padding-left: 50px;
+
+}
+.menu-area ul li a{
+    font-size: 1rem;
+    color: #8987A1;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    
+}
+.menu-area ul li a:hover {
+    color: #000000;
+    transition: .3s;
+}
+.cart-area{
+    padding-left: 55px;
+}
+.cart-area a {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+.cart-icon {
+    padding-right: 10px;
+}
+
+/* banner css is here */
+.banner-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.banner-content {
+    display: flex;
+}
+.banner-text {
+    padding-top: 60px;
+}
+.banner-text h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #E95A08;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 10px;
+}
+.banner-text h2 span {
+    color: #000000;
+}
+.banner-img img {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0px 30px;
+    }
+    .cart-area a {
+        font-size: 2.5rem;
+    }
+    .menu-area ul {
+        display: none;
+    }
+    .banner-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-img img {
+        width: 100%;
+    }
+    .banner-text h2 {
+        font-size: 4rem;
+    }
+    .banner-text p {
+        font-size: 2.8rem;
+    }
+}
