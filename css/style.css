@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #F5F8FF;
 }
@@ -12,6 +13,7 @@ body {
     width: 1140px;
     margin: 0 auto;
 }
+
 p {
     font-size: 1.4rem;
     font-weight: 400;
@@ -19,6 +21,7 @@ p {
     color: #7b7c80;
 
 }
+
 .section-title {
     font-size: 3rem;
     font-weight: bold;
@@ -35,33 +38,40 @@ nav {
     align-items: center;
     margin-top: 20px;
 }
+
 .menu-area {
     display: flex;
 }
+
 .menu-area ul {
     display: flex;
     list-style: none;
 }
+
 .menu-area ul li {
     padding-left: 50px;
 
 }
-.menu-area ul li a{
+
+.menu-area ul li a {
     font-size: 1rem;
     color: #8987A1;
     font-weight: 400;
     text-transform: capitalize;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    
+
 }
+
 .menu-area ul li a:hover {
     color: #000000;
     transition: .3s;
 }
-.cart-area{
+
+.cart-area {
     padding-left: 55px;
 }
+
 .cart-area a {
     font-size: 1rem;
     color: #000000;
@@ -70,6 +80,7 @@ nav {
     font-family: "Inter", sans-serif;
     text-decoration: none;
 }
+
 .cart-icon {
     padding-right: 10px;
 }
@@ -79,12 +90,15 @@ nav {
     padding-top: 120px;
     padding-bottom: 100px;
 }
+
 .banner-content {
     display: flex;
 }
+
 .banner-text {
     padding-top: 60px;
 }
+
 .banner-text h2 {
     font-size: 4rem;
     font-weight: bold;
@@ -92,9 +106,11 @@ nav {
     font-family: "Noto Serif", serif;
     margin-bottom: 10px;
 }
+
 .banner-text h2 span {
     color: #000000;
 }
+
 .banner-img img {
     display: block;
 }
@@ -103,22 +119,27 @@ nav {
 .planet-area {
     padding-bottom: 210px;
 }
+
 .planet-head {
     text-align: center;
     padding: 0px 120px;
     margin-bottom: 60px;
 }
+
 .planet-head h3 span {
     color: #000000;
 }
+
 .planet-img img {
     height: 100%;
     width: 100%;
     margin-bottom: 10px;
 }
+
 .planet-text {
     text-align: center;
 }
+
 .planet-text h4 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -126,6 +147,7 @@ nav {
     font-family: "Inter", sans-serif;
     margin-bottom: 20px;
 }
+
 .planet-text span {
     font-size: 1.5rem;
     font-weight: bold;
@@ -134,12 +156,14 @@ nav {
     display: block;
     margin-bottom: 30px;
 }
+
 .planet-inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
     column-gap: 20px;
 }
+
 .planet-text a {
     font-size: 1rem;
     font-weight: 600;
@@ -155,10 +179,12 @@ nav {
 .planet-lover-area {
     padding-bottom: 100px;
 }
+
 .planet-lover-content {
     display: flex;
     column-gap: 60px;
 }
+
 .planet-lover-text h3 {
     font-size: 3rem;
     font-weight: bold;
@@ -167,9 +193,15 @@ nav {
     margin-bottom: 10px;
     padding-top: 30px;
 }
-.planet-lover-text ul {
-    padding-left: 20px;
+
+.planet-lover-text h3 span {
+    display: block;
 }
+
+.planet-lover-text ul {
+    padding-left: 30px;
+}
+
 .planet-lover-text ul li {
     font-size: 1.5rem;
     font-weight: 400;
@@ -177,6 +209,24 @@ nav {
     color: #7b7c80;
     margin-bottom: 18px;
 }
+
+.planet-lover-img {
+    position: relative;
+}
+
+.badge-img img {
+    height: 285px;
+    width: 285px;
+    position: absolute;
+    top: -130px;
+    right: -90px;
+}
+
+.img-shadow {
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.25));
+}
+
+/* latest deal area */
 
 
 
@@ -188,34 +238,78 @@ nav {
 
 @media screen and (max-width: 576px) {
     .container {
-        padding: 0px 30px;
+        padding: 0px 60px;
     }
+
     /* nav area */
     .cart-area a {
         font-size: 2.5rem;
     }
+
     .menu-area ul {
         display: none;
     }
+
     /* hero area */
     .banner-content {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .banner-img img {
         width: 100%;
     }
+
     .banner-text h2 {
         font-size: 4rem;
         padding-bottom: 15px;
     }
+
     .banner-text p {
         font-size: 2.8rem;
     }
+
     .planet-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-    column-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    /* planet lover area */
+    .planet-lover-area {
+        padding-top: 90px;
+    }
+
+    .planet-lover-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .planet-lover-text h3 {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+
+    .planet-lover-text h3 span {
+        display: inline;
+    }
+
+    .planet-lover-text ul {
+        padding-left: 60px;
+    }
+
+    .planet-lover-text ul li {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .planet-lover-img img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .badge-img {
+        display: none;
     }
 }
