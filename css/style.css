@@ -19,6 +19,13 @@ p {
     color: #7b7c80;
 
 }
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E95A08;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 10px;
+}
 
 
 /* header css is here */
@@ -70,7 +77,7 @@ nav {
 /* banner css is here */
 .banner-area {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 .banner-content {
     display: flex;
@@ -92,6 +99,84 @@ nav {
     display: block;
 }
 
+/* our planet area */
+.planet-area {
+    padding-bottom: 210px;
+}
+.planet-head {
+    text-align: center;
+    padding: 0px 120px;
+    margin-bottom: 60px;
+}
+.planet-head h3 span {
+    color: #000000;
+}
+.planet-img img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.planet-text {
+    text-align: center;
+}
+.planet-text h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+.planet-text span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111111;
+    font-family: "Inter", sans-serif;
+    display: block;
+    margin-bottom: 30px;
+}
+.planet-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.planet-text a {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #E95A08;
+    padding: 20px 80px;
+}
+
+/* planet lover area */
+.planet-lover-area {
+    padding-bottom: 100px;
+}
+.planet-lover-content {
+    display: flex;
+    column-gap: 60px;
+}
+.planet-lover-text h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+.planet-lover-text ul {
+    padding-left: 20px;
+}
+.planet-lover-text ul li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #7b7c80;
+    margin-bottom: 18px;
+}
 
 
 
@@ -99,17 +184,20 @@ nav {
 
 
 
+/* media qury */
 
 @media screen and (max-width: 576px) {
     .container {
         padding: 0px 30px;
     }
+    /* nav area */
     .cart-area a {
         font-size: 2.5rem;
     }
     .menu-area ul {
         display: none;
     }
+    /* hero area */
     .banner-content {
         display: flex;
         flex-direction: column-reverse;
@@ -119,8 +207,15 @@ nav {
     }
     .banner-text h2 {
         font-size: 4rem;
+        padding-bottom: 15px;
     }
     .banner-text p {
         font-size: 2.8rem;
+    }
+    .planet-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
     }
 }
