@@ -59,7 +59,7 @@ nav {
 .menu-area ul li a {
     font-size: 1rem;
     color: #8987A1;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
     font-family: "Inter", sans-serif;
     text-decoration: none;
@@ -152,7 +152,7 @@ nav {
 }
 
 .planet-text span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #111111;
     font-family: "Inter", sans-serif;
@@ -168,14 +168,14 @@ nav {
 }
 
 .planet-text a {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     font-family: "Inter", sans-serif;
     display: block;
     text-decoration: none;
     color: #ffffff;
     background-color: #E95A08;
-    padding: 20px 80px;
+    padding: 15px 80px;
 }
 
 /* planet lover area */
@@ -246,7 +246,7 @@ nav {
 .latest-deal-content {
     display: grid;
     column-gap: 20px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .latets-deals-item-3 {
@@ -328,11 +328,15 @@ nav {
 }
 
 .latest-deal-content h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     font-family: "Noto Serif", serif;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.latets-deals-item-3 h5 {
+    font-size: 2rem;
 }
 
 .latest-deal-content a {
@@ -341,7 +345,7 @@ nav {
     font-weight: 400;
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     display: inline-block;
 }
 
@@ -371,6 +375,10 @@ nav {
     border: none;
     padding: 15px 20px;
     width: 830px;
+}
+
+input:focus {
+    outline: none;
 }
 
 .input-area {
@@ -445,6 +453,9 @@ nav {
 
 
 
+
+
+
 /* Media Queries */
 
 @media screen and (max-width: 576px) {
@@ -462,6 +473,10 @@ nav {
     }
 
     /* hero area */
+    .banner-area {
+        padding-bottom: 120px;
+    }
+
     .banner-content {
         display: flex;
         flex-direction: column-reverse;
@@ -469,6 +484,10 @@ nav {
 
     .banner-img img {
         width: 100%;
+    }
+
+    .banner-text {
+        padding-top: 100px;
     }
 
     .banner-text h2 {
@@ -480,6 +499,15 @@ nav {
         font-size: 2.8rem;
     }
 
+    /* our planet area */
+    .planet-head h3 {
+        font-size: 3.8rem;
+    }
+
+    .planet-head p {
+        font-size: 2.5rem;
+    }
+
     .planet-inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -487,28 +515,63 @@ nav {
         column-gap: 40px;
     }
 
+    .planet-text h4 {
+        font-size: 2.5rem;
+    }
+
+    .planet-text span {
+        font-size: 2rem;
+    }
+
+    .planet-text a {
+        font-size: 1.8rem;
+    }
+
     /* latest deal area */
 
     .latest-deal-area {
+        padding-top: 80px;
         padding-bottom: 80px;
     }
 
+    .latest-deal-head h3 {
+        font-size: 4rem;
+    }
+
+    .latest-deal-head p {
+        font-size: 2rem;
+    }
+
     .latets-deals-item-1 {
-        padding: 150px 0px;
+        height: 500px;
+        margin-bottom: 30px;
+        padding-top: 22%;
     }
 
     .latets-deals-item-2 {
-        padding: 150px 0px;
+        height: 500px;
+        padding-top: 22%;
+        margin-bottom: 30px;
     }
 
     .latets-deals-item-3 {
-        padding: 150px 0px;
-        margin-top: 20px;
+        height: 500px;
+        padding-top: 20%;
     }
 
     .latest-deal-content {
         display: block;
     }
+
+    .latest-deal-content h5 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .latest-deal-content a {
+        font-size: 2rem;
+    }
+
 
     /* planet lover area */
     .planet-lover-area {
@@ -534,7 +597,7 @@ nav {
     }
 
     .planet-lover-text ul li {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin-bottom: 50px;
     }
 
@@ -547,26 +610,61 @@ nav {
         display: none;
     }
 
+    /* join area */
+
     .join-area {
         display: inline-block;
     }
 
     .join-content {
-        padding-left: 300px;
-        padding-right: 300px;
+        padding-left: 156px;
+        padding-right: 156px;
+    }
+
+    .join-content h3 {
+        font-size: 2.9rem;
     }
 
     .input-area input {
-        width: 400px;
+        width: 600px;
+        font-size: 1.8rem;
     }
+
+    .input-area button {
+        font-size: 2rem;
+        padding: 20px 30px;
+    }
+
+
+    /* footer area */
 
     .footer-area {
         padding-top: 80px;
     }
 
+    .footer-logo img {
+        height: 250px;
+        width: auto;
+        margin-bottom: 40px;
+    }
+
+    .footer-content p {
+        font-size: 2rem;
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
     .footer-content {
         display: grid;
         grid-template-columns: none;
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 40px;
+    }
+
+    .footer-menu ul li a {
+        font-size: 2rem;
     }
 
     .footer-menu {
@@ -578,6 +676,7 @@ nav {
         width: 30%;
         display: flex;
         height: 50px;
+        margin-bottom: 50px;
 
     }
 }
